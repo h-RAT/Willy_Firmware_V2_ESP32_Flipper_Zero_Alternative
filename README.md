@@ -37,6 +37,7 @@ This firmware allows the following attacks:
 - [ ] Jammer
 
 Device features:
+- [x] Touch Screen
 - [x] Battery Indicator
 - [x] Battery Charger
 - [x] SD Card Module
