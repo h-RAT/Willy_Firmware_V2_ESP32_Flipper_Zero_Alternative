@@ -8,17 +8,17 @@
 
 # Preview
 <div align="center">
-  <img src="https://i.imgur.com/CuWzjW4.png" alt="Initialization"> 
-  <img src="https://i.imgur.com/q45a5uw.png" alt="Device">
-  <img src="https://i.imgur.com/8hOUunz.png" alt="Main">
-  <img src="https://i.imgur.com/3YayXeg.png" alt="Signal">
-  <img src="https://i.imgur.com/KBUWS8W.png" alt="Transmit">
-  <img src="https://i.imgur.com/tmOI6ZI.png" alt="Misc">
-  <img src="https://i.imgur.com/HCqERmt.png" alt="Tesla">
-  <img src="https://i.imgur.com/YLbnwBH.png" alt="DeBruijn">
-  <img src="https://i.imgur.com/bzXyg3L.png" alt="Jukebox">
-  <img src="https://i.imgur.com/YwK1QaS.png" alt="SD Card">
-  <img src="https://i.imgur.com/uNRprTl.png" alt="Settings">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Init.png" alt="Initialization"> 
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" alt="Device">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" alt="Main">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" alt="Signal">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png" alt="Transmit">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" alt="Misc">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" alt="Tesla">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" alt="DeBruijn">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" alt="Jukebox">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD.png" alt="SD Card">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" alt="Settings">
 </div>
 
 <br>
