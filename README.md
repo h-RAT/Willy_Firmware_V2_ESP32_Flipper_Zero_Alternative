@@ -7,51 +7,44 @@
 <br>
 
 # Preview
+<div align="center">
+  <img src="https://i.imgur.com/3xvhj2k.png" alt="IMAGE ALT TEXT">  <img src="https://i.imgur.com/Mdsvnu6.png" alt="IMAGE ALT TEXT">
+</div>
 
 <br>
 
 # Summary
-
 <li><strong><a href="#introduciton">Introduction</a></strong></li>
-<li><strong><a href="#features">Features</a></strong></li>
-<ul>
-<li><a href="#record">1) Record</a></li>
-<li><a href="#transmit">2) Transmit</a></li>
-<li><a href="#saved">3) Saved</a></li>
-<li><a href="#jammer">4) Jammer</a></li>
-<li><a href="#scanner">5) Scanner</a></li>
-<li><a href="#bruteforcer">6) Bruteforcer</a></li>
-<li><a href="#cc1101">7) CC1101 Settings</a></li>
-<li><a href="#kaiju">8) Kaiju Analyze</a></li>
-<li><a href="#rolling">9) Kaiju Rolling Codes</a></li>
-<li><a href="#rolljam">10) Rolljam Attack</a></li>
-<li><a href="#rollback">11) Rollback Attack</a></li>
-<li><a href="#logs">12) Logs</a></li>
-<li><a href="#ecrf">13) Settings</a></li>
-<li><a href="#update">14) Firmware Update</a></li>
-</ul>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
-# Introduction<a id="introduciton"></a>
+# Introduction<a id="introduction"></a>
 Willy Firmware is an alternative to Flipper Zero.
 
 This firmware allows the following attacks:
-<ul>
-<li>Record Signal RAW Data</li>
-<li>Record Signal Binary</li>
-<li>Transmit .SUB File</li>
-<li>Transmit RAW</li>
-<li>Transmit Binary</li>
-<li>Transmit Decimal**</li>
-<li>Kaiju Analyze</li>
-<li>Kaiju Rolling Codes</li>
-<li>Signal Scanner</li>
-<li>Bruteforce**</li>
-<li>Rolljam</li>
-<li>Rollback</li>
-<li>Jammer</li>
-<li>...</li>
+- [x] Record Signal
+- [ ] Save Signal
+- [x] Send Last Signal
+- [x] Transmit .SUB File (RAW, Princeton, CAME, NiceFLO, GateTX, Holtek HT12X)
+- [x] Transmit Protocol*
+- [x] Signal Scanner
+- [x] Bruteforce Protocol*
+- [x] Bruteforce DeBruijn**
+- [x] Bruteforce Jukebox***
+- [x] Open Tesla Charge Door (EU)
+- [x] Open Tesla Charge Door (US)
+- [ ] Rolljam
+- [ ] Rollback
+- [ ] Jammer
 
-</ul>
+Device features:
+- [x] Battery Indicator
+- [x] Battery Charger
+- [x] SD Card Module
+- [x] CC1101 Module
 
-**Supported protocol: Princeton (24bits) , Holtek HT12X (12bits) , CAME (12bits) , CAME (18bits) , CAME (24bits) , CAME (25bits) , SMC5326 (25bits) , Nice FLO (12bits) , Nice FLO (24bits) , GateTX (24bits)
+# Introduction<a id="introduction"></a>
+
+*Protocol: Princeton (24bits), Holtek HT12X (12bits), CAME (12bits), CAME (18bits), CAME (24bits), CAME (25bits), SMC5326 (25bits), Nice FLO (12bits), Nice FLO (24bits), GateTX (24bits),
+**DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
+***Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
+
