@@ -42,7 +42,7 @@ Device features:
 - [x] SD Card Module
 - [x] CC1101 Module
 
-# Introduction<a id="introduction"></a>
+<br>
 
 *Protocol: Princeton (24bits), Holtek HT12X (12bits), CAME (12bits), CAME (18bits), CAME (24bits), CAME (25bits), SMC5326 (25bits), Nice FLO (12bits), Nice FLO (24bits), GateTX (24bits),
 <br><br>
@@ -50,3 +50,10 @@ Device features:
 <br><br>
 ***Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
 
+# Disclaimer<a id="disclaimer"></a>
+
+This device is a basic device for professionals and cybersecurity enthusiasts.
+
+We are not responsible for the incorrect use of this device.
+
+Be careful with this device and the transmission of signals. Make sure to follow the laws that apply to your country.
