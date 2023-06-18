@@ -45,8 +45,8 @@ Device features:
 # Introduction<a id="introduction"></a>
 
 *Protocol: Princeton (24bits), Holtek HT12X (12bits), CAME (12bits), CAME (18bits), CAME (24bits), CAME (25bits), SMC5326 (25bits), Nice FLO (12bits), Nice FLO (24bits), GateTX (24bits),
-<br>
+<br><br>
 **DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
-<br>
+<br><br>
 ***Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
 
