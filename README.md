@@ -1,4 +1,4 @@
-# Willy_Firmware_CC1101
+# Willy_Firmware_CC1101 (Work in progress)
 
 <strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/).
 
