@@ -32,12 +32,12 @@ Willy Firmware is an alternative to Flipper Zero.
 
 This firmware allows the following attacks:
 - [x] Record Signal
-- [ ] Save Signal
+- [x] Save Signal to SD Card
 - [x] Send Last Signal
-- [x] Transmit .SUB File (RAW, Princeton, CAME, NiceFLO, GateTX, Holtek HT12X)
-- [x] Transmit Protocol*
+- [x] Transmit .SUB File from SD Card (Protocol: RAW, Princeton, CAME, NiceFLO, GateTX, Holtek HT12X)
+- [x] Transmit Decimal*
 - [x] Signal Scanner
-- [x] Bruteforce Protocol*
+- [x] Bruteforce Decimal*
 - [x] Bruteforce DeBruijn**
 - [x] Bruteforce Jukebox***
 - [x] Open Tesla Charge Door (EU)
