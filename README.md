@@ -36,7 +36,8 @@ This firmware allows the following attacks:
 - [ ] Jammer
 
 Device features:
-- [x] Touch Screen
+- [x] ESP32 T-Display-S3
+- [x] Touchscreen Display
 - [x] Battery Indicator
 - [x] Battery Charger
 - [x] SD Card Module
