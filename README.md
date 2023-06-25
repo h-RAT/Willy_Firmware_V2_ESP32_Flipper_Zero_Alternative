@@ -33,7 +33,7 @@ This firmware allows the following attacks:
 - [x] Open Tesla Charge Door (US)
 - [ ] Rolljam
 - [ ] Rollback
-- [ ] Jammer
+- [x] Jammer
 
 Device features:
 - [x] ESP32 T-Display-S3
