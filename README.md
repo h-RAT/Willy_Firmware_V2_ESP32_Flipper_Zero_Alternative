@@ -50,8 +50,8 @@ This firmware allows the following attacks:
 - [x] Bruteforce Jukebox***
 - [x] Open Tesla Charge Door (EU)
 - [x] Open Tesla Charge Door (US)
-- [ ] Rolljam
-- [ ] Rollback
+- [x] Rolljam
+- [x] Rollback
 - [x] Jammer
 
 Device features:
