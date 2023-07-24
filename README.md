@@ -61,7 +61,7 @@ Willy Firmware is an alternative to Flipper Zero.
 
 *Flipper Zero .SUB File (RAW, AlutechAT-4N, Ansonic, BETT, CAME, FAAC, GateTX, Holtek, Holtek HT12X, Honeywell, Hormann, Intertechno_V3, KeeLoq, Linear, Linear Delta 3, MegaCode, Nice FLO, Princeton, SMC5326, Starline, UNILARM)
 <br><br>
-***Bruteforcer: CAME (12bit), Nice FLO (12bit), Ansonic (12bit), Holtek FM (12bit), Holtek AM (12bit), Chamberlain (9bit), Chamberlain (8bit), Chamberlain (7bit), Linear (10bit), Linear Delta 3 (8bit), UNILARM (25bit), SMC5326 (25bit), Princeton (24bit)
+**Bruteforcer: CAME (12bit), Nice FLO (12bit), Ansonic (12bit), Holtek FM (12bit), Holtek AM (12bit), Chamberlain (9bit), Chamberlain (8bit), Chamberlain (7bit), Linear (10bit), Linear Delta 3 (8bit), UNILARM (25bit), SMC5326 (25bit), Princeton (24bit)
 <br><br>
 ***DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
 <br><br>
