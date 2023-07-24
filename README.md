@@ -36,42 +36,36 @@ Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
 
 # Summary<a id="summary"></a>
 <li><strong><a href="#introduciton">Introduction</a></strong></li>
+<li><strong><a href="#features">Features</a></strong></li>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
 # Introduction<a id="introduction"></a>
 Willy Firmware is an alternative to Flipper Zero.
 
-This firmware allows the following attacks:
+# Features<a id="features"></a>
+
 - [x] Record Signal
-- [x] Save Signal to SD Card
 - [x] Send Last Signal
-- [x] Transmit .SUB File from SD Card (Protocol: RAW, Princeton, CAME, NiceFLO, GateTX, Holtek HT12X)
-- [x] Transmit Decimal*
-- [x] Signal Scanner
-- [x] Bruteforce Decimal*
-- [x] Bruteforce DeBruijn**
-- [x] Bruteforce Jukebox***
-- [x] Open Tesla Charge Door (EU)
-- [x] Open Tesla Charge Door (US)
+- [x] Save Signal to SD Card
+- [x] Send Signal from SD Card*
+- [x] Scanner
+- [x] Jammer
+- [x] Bruteforcer**
+- [x] DeBruijn***
+- [x] Jukebox****
+- [x] Tesla Charge Door
 - [x] Rolljam
 - [x] Rollback
-- [x] Jammer
-
-Device features:
-- [x] ESP32 T-Display-S3
-- [x] Touchscreen Display
-- [x] Battery Indicator
-- [x] Battery Charger
-- [x] SD Card Module
-- [x] CC1101 Module
 
 <br>
 
-*Protocol: Princeton (24bits), Holtek HT12X (12bits), CAME (12bits), CAME (18bits), CAME (24bits), CAME (25bits), SMC5326 (25bits), Nice FLO (12bits), Nice FLO (24bits), GateTX (24bits),
+*Flipper Zero .SUB File (RAW, AlutechAT-4N, Ansonic, BETT, CAME, FAAC, GateTX, Holtek, Holtek HT12X, Honeywell, Hormann, Intertechno_V3, KeeLoq, Linear, Linear Delta 3, MegaCode, Nice FLO, Princeton, SMC5326, Starline, UNILARM)
 <br><br>
-**DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
+***Bruteforcer: CAME (12bit), Nice FLO (12bit), Ansonic (12bit), Holtek FM (12bit), Holtek AM (12bit), Chamberlain (9bit), Chamberlain (8bit), Chamberlain (7bit), Linear (10bit), Linear Delta 3 (8bit), UNILARM (25bit), SMC5326 (25bit), Princeton (24bit)
 <br><br>
-***Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
+***DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
+<br><br>
+****Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
 
 # Disclaimer<a id="disclaimer"></a>
 
