@@ -52,6 +52,11 @@ Willy Firmware is an alternative to Flipper Zero.
 
 # Build<a id="build"></a>
 
+Part Required:
+- [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
+- [x] 1x S3 T-Display TF Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
+- [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
+
 # Disclaimer<a id="disclaimer"></a>
 
 This device is a basic device for professionals and cybersecurity enthusiasts.
