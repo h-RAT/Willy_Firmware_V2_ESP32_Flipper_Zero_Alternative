@@ -37,8 +37,8 @@ Willy Firmware is an alternative to Flipper Zero.
 - [x] DeBruijn***
 - [x] Jukebox****
 - [x] Tesla Charge Door
-- [x] Rolljam
-- [x] Rollback
+- [x] Rolljam (Requires two devices to perform this attack)
+- [x] Rollback (Requires two devices to perform this attack)
 
 <br>
 
