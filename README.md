@@ -19,6 +19,7 @@
 # Summary<a id="summary"></a>
 <li><strong><a href="#introduciton">Introduction</a></strong></li>
 <li><strong><a href="#features">Features</a></strong></li>
+<li><strong><a href="#build">Build</a></strong></li>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
 # Introduction<a id="introduction"></a>
@@ -48,6 +49,8 @@ Willy Firmware is an alternative to Flipper Zero.
 ***DeBruijn: Linear Multicode (10bits), Stanley Multicode (10bits), Chamberlain (9bits), Linear Moorematic (8bits),
 <br><br>
 ****Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
+
+# Build<a id="build"></a>
 
 # Disclaimer<a id="disclaimer"></a>
 
