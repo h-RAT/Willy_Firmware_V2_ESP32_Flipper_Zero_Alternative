@@ -89,6 +89,10 @@ Due to a lot of abuse, the firmware is no longer free.
 
 <br>
 
+Add me on discord for more info.
+
+<br>
+
 # Disclaimer<a id="disclaimer"></a>
 
 This device is a basic device for professionals and cybersecurity enthusiasts.
