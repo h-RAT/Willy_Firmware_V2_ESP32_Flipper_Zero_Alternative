@@ -1,14 +1,6 @@
 # Willy is an alternative to Flipper Zero
 
-<strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/)
-<br><br>
-<strong>Discord: h-RAT#2465</strong>
-<br><br>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y1L3OUQ)
-
-# Preview
-
-<div align="center">
+<div align="flex">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230624_181105.jpg" width="500" alt="Willy">
   <br>
   Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
@@ -16,15 +8,28 @@
 
 <br>
 
+<strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/)
+<br><br>
+<strong>Discord: h-RAT#2465</strong>
+<br><br>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y1L3OUQ)
+
+<br>
+
 # Summary<a id="summary"></a>
 <li><strong><a href="#introduciton">Introduction</a></strong></li>
 <li><strong><a href="#features">Features</a></strong></li>
+<li><strong><a href="#preview">Preview</a></strong></li>
 <li><strong><a href="#build">Build</a></strong></li>
 <li><strong><a href="#firmware">Firmware</a></strong></li>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
+<br>
+
 # Introduction<a id="introduction"></a>
 Willy Firmware is an alternative to Flipper Zero.
+
+<br>
 
 # Features<a id="features"></a>
 
@@ -51,16 +56,50 @@ Willy Firmware is an alternative to Flipper Zero.
 <br><br>
 ****Jukebox: Free Credit, Pause Song, Skip Song, Volume UP, Volume DOWN, Power OFF, Lock Queue,
 
+<br>
+
+# Preview<a id="preview"></a>
+
+   <div>
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Loading.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Theme.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Record.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Attack.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JammerRolljam.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRolljam.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRollback.png" width="170" alt="Willy">
+   </div>
+
+<br>
+
 # Build<a id="build"></a>
 
 Part Required:
 - [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
 - [x] 1x S3 T-Display TF Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
 - [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
+<br>
 
 # Firmware<a id="firmware"></a>
 
 Due to a lot of abuse, the firmware is no longer free.
+
+<br>
 
 # Disclaimer<a id="disclaimer"></a>
 
