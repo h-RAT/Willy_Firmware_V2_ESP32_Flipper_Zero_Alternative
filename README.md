@@ -1,6 +1,6 @@
-# Willy_Firmware_CC1101_ESP32_Display_Touchscreen (Work in progress)
+# Willy is an alternative to Flipper Zero
 
-<strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/).
+<strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/)
 <br><br>
 <strong>Discord: h-RAT#2465</strong>
 <br><br>
@@ -20,6 +20,7 @@
 <li><strong><a href="#introduciton">Introduction</a></strong></li>
 <li><strong><a href="#features">Features</a></strong></li>
 <li><strong><a href="#build">Build</a></strong></li>
+<li><strong><a href="#firmware">Firmware</a></strong></li>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
 # Introduction<a id="introduction"></a>
@@ -56,6 +57,10 @@ Part Required:
 - [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
 - [x] 1x S3 T-Display TF Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
 - [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
+
+# Firmware<a id="firmware"></a>
+
+Due to a lot of abuse, the firmware is no longer free.
 
 # Disclaimer<a id="disclaimer"></a>
 
