@@ -46,6 +46,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
    <div>
     	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Loading.png" width="170" alt="Willy">
+    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Function.png" width="170" alt="Willy">
     	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
     	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
     	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" width="170" alt="Willy">
@@ -76,16 +77,24 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 # Build<a id="build"></a>
 
-Part Required:
+Board:
 - [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
-- [x] 1x S3 T-Display TF Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
+
+CC1101 Shield:
+- [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
 - [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
+ 
+IR Shield: (soon)
 
 <br>
 
 # Firmware<a id="firmware"></a>
 
 Due to a lot of abuse, the firmware is no longer free.
+
+<br>
+
+Link: https://willyfirmware.mysellix.io/product/64ca6015d3acc
 
 <br>
 
