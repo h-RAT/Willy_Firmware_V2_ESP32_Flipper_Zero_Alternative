@@ -204,6 +204,8 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   
 <br>
   Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
+  <br>
+  Demo: https://www.youtube.com/shorts/5iebprjgEjE
   
 <br>
 
