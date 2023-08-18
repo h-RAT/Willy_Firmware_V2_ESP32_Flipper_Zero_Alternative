@@ -20,12 +20,22 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 <h2>Record</h2>
 
 - [x] Record Signal
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Record.png" width="170" alt="Willy">
+</div>
+
 - [x] Send Last Signal
 - [x] Save Last Signal	
-
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" width="170" alt="Willy">
+</div>
+   
 <h2>Transmit</h2>
 
 - [x] Send Key*
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png" width="170" alt="Willy">
+</div>
 
 <h2>*Protocol List</h2>
 
@@ -62,6 +72,9 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 <h2>Bruteforce</h2>
 
 - [x] Bruteforce Key**
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce.png" width="170" alt="Willy">
+</div>
 
 <h2>**Protocol List</h2>
 
@@ -80,6 +93,9 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 - [x] Send EU Tesla Charge Door
 - [x] Send US Tesla Charge Door
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" width="170" alt="Willy">
+</div>
 
 <h2>DeBruijn</h2>
 
@@ -87,6 +103,9 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Send Stanley Multicode
 - [x] Send Charmberlain
 - [x] Send Linear MooreMatic
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" width="170" alt="Willy">
+</div>
 
 <h2>Jukebox</h2>
 
@@ -97,10 +116,17 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Send Volume DOWN
 - [x] Send Power OFF
 - [x] Send Lock Queue
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" width="170" alt="Willy">
+</div>
 
 <h2>Attack Switch Mode</h2>
 
 - [x] Receiver/Jammer mode (Need two devices to perform the attacks properly)
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Attack.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JammerRolljam.png" width="170" alt="Willy">
+</div>
 
 <h2>Attack : Receiver : Rolljam</h2>
 
@@ -109,6 +135,10 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Start Rolljam Attack
 - [x] Send First Signal
 - [x] Send Second Signal
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRolljam.png" width="170" alt="Willy">
+</div>
 
 <h2>Attack : Receiver : Rollback</h2>
 
@@ -118,19 +148,32 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Start Rollback Attack
 - [x] Send Sequence
 - [x] Save Sequence
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRollback.png" width="170" alt="Willy">
+</div>
 
 <h2>Jammer</h2>
 
 - [x] Set Jammer Power
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png" width="170" alt="Willy">
+</div>
 
 <h2>Scanner</h2>
 
 - [x] Start Hoop Freq Scan
 - [x] Set Frequency Found
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner.png" width="170" alt="Willy">
+</div>
 
 <h2>SD Card</h2>
 
 - [x] Send .sub file***
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD.png" width="170" alt="Willy">
+</div>
 
 <h2>***Protocol List</h2>
 
@@ -171,43 +214,27 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 - [x] Set Frequency
 - [x] Set Preset
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
+</div>
 
-<br>
+<h2>Device</h2>
 
-# Preview<a id="preview"></a>
+- [x] Set Theme Color
+- [x] Device Information
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Function.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Theme.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" width="170" alt="Willy">
+</div>
 
-   <div>
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Loading.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Function.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Theme.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Record.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Attack.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JammerRolljam.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRolljam.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback.png" width="170" alt="Willy">
-    	<img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRollback.png" width="170" alt="Willy">
-   </div>
-  
-<br>
+# Video<a id="preview"></a>
+
   Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
   <br>
   Demo: https://www.youtube.com/shorts/5iebprjgEjE
-  
-<br>
 
 # Build<a id="build"></a>
 
