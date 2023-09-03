@@ -260,7 +260,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Fans.png" width="170" alt="Willy">
 </div>
 
-<h2>Infrared -> Learn</h2>
+<h2>Infrared -> Learn (work in progress - soon)</h2>
 
 - [x] Receive IR Signal*
 - [x] Save Last IR Signal
