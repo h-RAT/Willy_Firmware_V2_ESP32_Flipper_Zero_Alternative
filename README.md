@@ -8,16 +8,26 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 <br>
 
 <strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/)
-<br><br>
-<strong>Discord: h-RAT#2465</strong>
-<br><br>
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y1L3OUQ)
-
 <br>
+
+# Summary
+
+<li><strong><a href="#introduction">Introduction</a></strong></li>
+<li><strong><a href="#features">Features</a></strong></li>
+<ul>
+<li><a href="#subghz">SubGhz</a></li>
+<li><a href="#infrared">Infrared</a></li>
+</ul>
+
+<li><strong><a href="#video">Video</a></strong></li>
+<li><strong><a href="#build">Build</a></strong></li>
+<li><strong><a href="#firmware">Firmware</a></strong></li>
+<li><strong><a href="#contact">Contact</a></strong></li>
+<li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
 # Features<a id="features"></a>
 
-<h2>SubGhz -> Record</h2>
+<h2>SubGhz -> Record</h2><a id="subghz"></a>
 
 - [x] Record Signal
 <br><br><div>
@@ -218,7 +228,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
 </div>
 
-<h2>Infrared -> Universal Remotes</h2>
+<h2>Infrared -> Universal Remotes</h2><a id="infrared"></a>
 
 - [x] TV
 <br><br><div>
@@ -253,8 +263,8 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 <h2>Infrared -> Learn</h2>
 
 - [x] Receive IR Signal*
-- [ ] Save Last IR Signal
-- [ ] Send Last IR Signal
+- [x] Save Last IR Signal
+- [x] Send Last IR Signal
 <br><br><div>
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn.png" width="170" alt="Willy">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SignalIR.png" width="170" alt="Willy">
@@ -288,12 +298,14 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
   <br>
   Demo: https://www.youtube.com/shorts/5iebprjgEjE
-
+  
 # Build<a id="build"></a>
 
 <div align="flex">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230810_164448.jpg" width="500" alt="Willy">
 </div>
+
+<br>
 
 Board:
 - [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
@@ -302,9 +314,11 @@ CC1101 Shield:
 - [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
 - [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
  
-IR Shield: (soon)
-
-<br>
+IR Shield:
+- [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
+- [x] 1x Infrared Receiver TSOP4838 | https://www.aliexpress.us/item/1005004481948853.html
+- [x] 2x Infrared LED TSAL6400 | https://www.aliexpress.us/item/32670031000.html
+- [x] 2x Transistor 2N4401 | https://www.aliexpress.us/item/1005005484591463.html
 
 # Firmware<a id="firmware"></a>
 
@@ -318,7 +332,9 @@ Link: https://willyfirmware.mysellix.io/product/64ca6015d3acc
 
 Add me on discord for more info.
 
-<br>
+# Contact<a id="contact"></a>
+
+- [x] Discord: h-RAT#2465
 
 # Disclaimer<a id="disclaimer"></a>
 
