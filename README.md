@@ -17,7 +17,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 # Features<a id="features"></a>
 
-<h2>Record</h2>
+<h2>SubGhz -> Record</h2>
 
 - [x] Record Signal
 <br><br><div>
@@ -30,7 +30,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" width="170" alt="Willy">
 </div>
    
-<h2>Transmit</h2>
+<h2>SubGhz -> Transmit</h2>
 
 - [x] Send Key*
 <br><br><div>
@@ -69,7 +69,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Starline (64bit)
 - [x] UNILARM (25bit)
 
-<h2>Bruteforce</h2>
+<h2>SubGhz -> Bruteforce</h2>
 
 - [x] Bruteforce Key**
 <br><br><div>
@@ -89,7 +89,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] SMC5326 (25bit)
 - [x] UNILARM (25bit)
 
-<h2>Tesla</h2>
+<h2>SubGhz -> Tesla</h2>
 
 - [x] Send EU Tesla Charge Door
 - [x] Send US Tesla Charge Door
@@ -97,7 +97,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" width="170" alt="Willy">
 </div>
 
-<h2>DeBruijn</h2>
+<h2>SubGhz -> DeBruijn</h2>
 
 - [x] Send Linear Multicode
 - [x] Send Stanley Multicode
@@ -107,7 +107,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" width="170" alt="Willy">
 </div>
 
-<h2>Jukebox</h2>
+<h2>SubGhz -> Jukebox</h2>
 
 - [x] Send Free Credit
 - [x] Send Pause Song
@@ -120,7 +120,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" width="170" alt="Willy">
 </div>
 
-<h2>Attack Switch Mode</h2>
+<h2>SubGhz -> Attack Switch Mode</h2>
 
 - [x] Receiver/Jammer mode (Need two devices to perform the attacks properly)
 <br><br><div>
@@ -128,7 +128,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JammerRolljam.png" width="170" alt="Willy">
 </div>
 
-<h2>Attack : Receiver : Rolljam</h2>
+<h2>SubGhz -> Attack : Receiver : Rolljam</h2>
 
 - [x] Set Jammer Power
 - [x] Set Send First Signal Auto.
@@ -140,7 +140,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRolljam.png" width="170" alt="Willy">
 </div>
 
-<h2>Attack : Receiver : Rollback</h2>
+<h2>SubGhz -> Attack : Receiver : Rollback</h2>
 
 - [x] Set Jammer Power
 - [x] Set Num. Signal Required
@@ -153,14 +153,14 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRollback.png" width="170" alt="Willy">
 </div>
 
-<h2>Jammer</h2>
+<h2>SubGhz -> Jammer</h2>
 
 - [x] Set Jammer Power
 <br><br><div>
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png" width="170" alt="Willy">
 </div>
 
-<h2>Scanner</h2>
+<h2>SubGhz -> Scanner</h2>
 
 - [x] Start Hoop Freq Scan
 - [x] Set Frequency Found
@@ -168,7 +168,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner.png" width="170" alt="Willy">
 </div>
 
-<h2>SD Card</h2>
+<h2>SubGhz -> SD Card</h2>
 
 - [x] Send .sub file***
 <br><br><div>
@@ -210,7 +210,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 - [x] Starline
 - [x] UNILARM
 
-<h2>Settings</h2>
+<h2>SubGhz -> Settings</h2>
 
 - [x] Set Frequency
 - [x] Set Preset
@@ -218,12 +218,65 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
 </div>
 
+<h2>Infrared -> Universal Remotes</h2>
+
+- [x] TV
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/TV.png" width="170" alt="Willy">
+</div>
+
+- [x] Digital Signs
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DigitalsSigns.png" width="170" alt="Willy">
+</div>
+
+- [x] Projectors
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Projectors.png" width="170" alt="Willy">
+</div>
+
+- [x] Audio
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Audio.png" width="170" alt="Willy">
+</div>
+
+- [x] LED
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/LED.png" width="170" alt="Willy">
+</div>
+
+- [x] Fans
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Fans.png" width="170" alt="Willy">
+</div>
+
+<h2>Infrared -> Learn</h2>
+
+- [x] Receive IR Signal*
+- [ ] Save Last IR Signal
+- [ ] Send Last IR Signal
+<br><br><div>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SignalIR.png" width="170" alt="Willy">
+</div>
+
+<h2>*Protocol List</h2>
+
+- [x] NEC / NEC16
+- [x] Kaseikyo
+- [x] Sony
+- [x] Samsung
+- [x] RC5
+- [x] RC6
+
 <h2>Device</h2>
 
 - [x] Set Theme Color
 - [x] Device Information
 <br><br><div>
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Function.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Infrared.png" width="170" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Universal.png" width="170" alt="Willy">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Theme.png" width="170" alt="Willy">
