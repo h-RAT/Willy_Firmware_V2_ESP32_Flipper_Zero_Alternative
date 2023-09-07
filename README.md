@@ -302,7 +302,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 # Build<a id="build"></a>
 
 <div align="flex">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230810_164448.jpg" width="500" alt="Willy">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230907_140559.jpg" width="500" alt="Willy">
 </div>
 
 <br>
