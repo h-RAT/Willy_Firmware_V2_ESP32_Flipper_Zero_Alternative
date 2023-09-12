@@ -260,7 +260,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Fans.png" width="170" alt="Willy">
 </div>
 
-<h2>Infrared -> Learn (work in progress - soon)</h2>
+<h2>Infrared -> Learn</h2>
 
 - [x] Receive IR Signal*
 - [x] Save Last IR Signal
@@ -272,7 +272,7 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 <h2>*Protocol List</h2>
 
-- [x] NEC / NEC16
+- [x] NEC / APPLE / ONKYO
 - [x] Kaseikyo
 - [x] Sony
 - [x] Samsung
@@ -316,9 +316,9 @@ CC1101 Shield:
  
 IR Shield:
 - [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
-- [x] 1x Infrared Receiver TSOP4838 | https://www.aliexpress.us/item/1005004481948853.html
-- [x] 2x Infrared LED TSAL6400 | https://www.aliexpress.us/item/32670031000.html
-- [x] 2x Transistor 2N4401 | https://www.aliexpress.us/item/1005005484591463.html
+- [x] 1x Infrared Receiver TSOP4838 ( or any IR receiver model ) | https://www.aliexpress.us/item/1005004481948853.html
+- [x] 1x Infrared LED TSAL6400 ( or any IR LED model ) | https://www.aliexpress.us/item/32670031000.html
+- [x] 1x Transistor 2N4401 (Optional) | https://www.aliexpress.us/item/1005005484591463.html
 
 # Firmware<a id="firmware"></a>
 
