@@ -336,7 +336,7 @@ Add me on discord for more info.
 
 # Contact<a id="contact"></a>
 
-- [x] Discord: h-RAT#2465
+- [x] Discord: h_rat
 
 # Disclaimer<a id="disclaimer"></a>
 
