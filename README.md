@@ -21,7 +21,6 @@ Willy is an alternative to Flipper Zero based on an ESP32.
 
 <li><strong><a href="#video">Video</a></strong></li>
 <li><strong><a href="#build">Build</a></strong></li>
-<li><strong><a href="#buy">Buy</a></strong></li>
 <li><strong><a href="#contact">Contact</a></strong></li>
 <li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
 
@@ -323,16 +322,9 @@ IR Shield:
 - [x] 1x Infrared LED TSAL6400 ( or any IR LED model ) | https://www.aliexpress.us/item/32670031000.html
 - [x] 1x Transistor 2N4401 (Optional) | https://www.aliexpress.us/item/1005005484591463.html
 
-# Buy<a id="buy"></a>
-
-Due to a lot of abuse, the firmware is no longer free.
-
-Firmware: https://willyfirmware.mysellix.io/product/64ca6015d3acc
-
-Complete device: https://willyfirmware.mysellix.io/product/6509a82a3cec7
 <br>
 
-Add me on discord for more info.
+Add me on discord for more information
 
 # Contact<a id="contact"></a>
 
