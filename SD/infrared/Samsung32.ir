@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Samsung32_02C
+type: parsed
+protocol: Samsung32
+address: 0E 00 00 00
+command: 0D 00 00 00

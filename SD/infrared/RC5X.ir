@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: RC5X_02C
+type: parsed
+protocol: RC5X
+address: 00 00 00 00
+command: 2C 00 00 00

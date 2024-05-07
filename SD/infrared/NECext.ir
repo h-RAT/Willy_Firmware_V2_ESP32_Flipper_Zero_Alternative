@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: NECext_02C
+type: parsed
+protocol: NECext
+address: BA A0 00 00
+command: 01 FE 00 00

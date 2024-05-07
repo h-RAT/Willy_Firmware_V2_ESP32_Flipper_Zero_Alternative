@@ -1,339 +1,801 @@
-# Introduction<a id="introduction"></a>
-Willy is an alternative to Flipper Zero based on an ESP32.
+<h1 align="center"> <code>Willy Firmware V2</code> - Flipper Zero alternative with ESP32</h1><a id="introduction"></a>
 
-<div align="flex">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Logo.png">
+</p>
+
+<h2 align="center">
+  <a href="#introduction">Introduction</a> | <a href="#features">Features</a> | <a href="#build">Build</a> | <a href="#contact">Contact</a> | <a href="#disclaimer">Disclaimer</a>
+</h2>
+
+This firmware is an alternative to Flipper Zero for ESP-32, and is always updated from the original Flipper ideas, making it the most stable alternative.
+<h4 align="center">Website: https://willy-firmware.com/</h4>
+
+-----
+
+<br>
+<h1 align="center">What makes it special?</h1>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230624_181105.jpg" width="500" alt="Willy">
-</div>
+</p>
+
+We have spent many hours perfecting this code even further, and getting the most out of it.
+
+The goal of this firmware is to be able to benefit from the same functions as the Flipper Zero but on an ESP32, which is cheaper, and easier to obtain in some countries, as well as to regularly bring out amazing updates based on what the community wants, with a real understanding of what is happening. Fixing regularly talked about bugs and expanding capabilities with exciting new features and, most importantly, ensuring the simplest user experience possible.
 
 <br>
 
-<strong>Idea, development and implementation of this firmware:</strong> h-RAT (https://github.com/h-RAT/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Home.png">
+</p>
+
+<br><br>
+- <h4>Feature-rich: We include all common applications (SubGhz/Infrared/BLE/WiFi) in the firmware as well as new features.</h4>
+
+- <h4>Stable: Many hours have been spent rewriting core parts of the firmware as well as some of its apps to ensure stability.</h4>
+
+<br><br>
+
+-----
+
+<h1 align="center">Features:</h1><a id="features"></a>
+
+### #SubGhz
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SubGhz1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SubGhz2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SubGhz3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SubGhz4.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SubGhz5.png">
+</p>
+
+-----
+
+- Read RAW:<br>
+Reads and decode signals in a raw format, including signals from remotes with unknown protocols. (You can save 30 signals in the memory)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read_RAW1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read_RAW2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read_RAW3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsRSSI.png"> 
+</p>
+
+From there you can send it or save it on the sd card for use it later. 
+
+-----
+
+- Read:<br>
+Reads and decodes signals based on known protocols. If the protocol is static, Willy decode the signal. (You can save 30 signals in the memory)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsRSSI.png"> 
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read4.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Read5.png">
+</p>
+
+From there you can send it or save it on the sd card for use it later. 
+
 <br>
 
-# Summary
+```txt
+[Supported decoders]
 
-<li><strong><a href="#introduction">Introduction</a></strong></li>
-<li><strong><a href="#features">Features</a></strong></li>
-<ul>
-<li><a href="#subghz">SubGhz</a></li>
-<li><a href="#infrared">Infrared</a></li>
-</ul>
+* CAME (12bit)
+* CAME (18bit)
+* CAME (24bit)
+* CAME (25bit)
+* Chamberlain (7bit)
+* Chamberlain (8bit)
+* Chamberlain (9bit)
+* GateTX (24bit)
+* KeeLoq (64bit)
+* Linear (10bit)
+* Nice FLO (12bit)
+* Nice FLO (24bit)
+* Princeton (24bit)
+* Starline (64bit)
+```
 
-<li><strong><a href="#video">Video</a></strong></li>
-<li><strong><a href="#build">Build</a></strong></li>
-<li><strong><a href="#contact">Contact</a></strong></li>
-<li><strong><a href="#disclaimer">Disclaimer</a></strong></li>
+<br>
 
-# Features<a id="features"></a>
+-----
 
-<h2>SubGhz -> Record</h2><a id="subghz"></a>
+- Transmit:<br>
+Generate and send signal based on known protocol and key.
 
-- [x] Record Signal
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Record.png" width="170" alt="Willy">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsRepeat.png">
+</p>
 
-- [x] Send Last Signal
-- [x] Save Last Signal	
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Signal.png" width="170" alt="Willy">
-</div>
-   
-<h2>SubGhz -> Transmit</h2>
+From there you can send it or save it on the sd card for use it later. 
 
-- [x] Send Key*
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Transmit.png" width="170" alt="Willy">
-</div>
+<br>
 
-<h2>*Protocol List</h2>
+```txt
+[Supported protocols]
 
-- [x] Ansonic (12bit)
-- [x] BETT (18bit)
-- [x] CAME (12bit, 18bit, 24bit, 25bit)
-- [x] Clemsa (18bit)
-- [x] Doitrand (37bit)
-- [x] Dooya (40bit)
-- [x] FAAC SLH (64bit)
-- [x] GateTX (24bit)
-- [x] Holtek HT12X (12bit)
-- [x] Holtek (40bit)
-- [x] Honeywell (48bit)
-- [x] Hormann (44bit)
-- [x] IntertechnoV3 (32bit)
-- [x] KeeLoq (64bit)
-- [x] Kinggates (89bit)
-- [x] LinearDelta3 (8bit)
-- [x] Linear (10bit)
-- [x] Magellan (32bit)
-- [x] Marantec (49bit)
-- [x] Nero Radio (56bit)
-- [x] Nero Sketch (40bit)
-- [x] Nice FLO (12bit, 24bit)
-- [x] PhoenixV2 (52bit)
-- [x] Power Smart (64bit)
-- [x] Princeton (24bit)
-- [x] Security+ V1 (21bit)
-- [x] SMC5326 (25bit)
-- [x] Starline (64bit)
-- [x] UNILARM (25bit)
+* Alutech AT-4N (72bit)
+* Ansonic (12bit)
+* BETT (18bit)
+* CAME Atomo (62bit)
+* CAME TWEE (54bit)
+* CAME (12bit)
+* CAME (18bit)
+* CAME (24bit)
+* CAME (25bit)
+* Chamberlain (7bit)
+* Chamberlain (8bit)
+* Chamberlain (9bit)
+* Clemsa (18bit)
+* Doitrand (37bit)
+* Dooya (40bit)
+* Faac SLH (64bit)
+* GateTX (24bit)
+* Genie (64bit)
+* Holtek_HT12X (12bit)
+* Holtek (40bit)
+* Honeywell (48bit)
+* Hormann HSM (44bit)
+* Intertechno_V3 (32bit)
+* KeeLoq (64bit)
+* KIA (61bit)
+* KingGates Stylo4k (89bit)
+* LinearDelta3 (8bit)
+* Linear (10bit)
+* Magellan (32bit)
+* Marantec (49bit)
+* Mastercode (36bit)
+* Megacode (24bit)
+* Nero Radio (56bit)
+* Nero Sketch (40bit)
+* Nice FLO (12bit)
+* Nice FLO (24bit)
+* Nice FloR-S (52bit)
+* Phoenix_V2 (52bit)
+* Power Smart (64bit)
+* Princeton (24bit)
+* Security+ 1.0 (21bit)
+* Security+ 2.0 (62bit)
+* SMC5326 (25bit)
+* Somfy Keytis (80bit)
+* Somfy Telis (56bit)
+* Starline (64bit)
+* UNILARM (25bit)
+```
 
-<h2>SubGhz -> Bruteforce</h2>
+<br>
 
-- [x] Bruteforce Key**
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce.png" width="170" alt="Willy">
-</div>
+-----
 
-<h2>**Protocol List</h2>
+- Scanner:<br>
+When analysing, the device scanning signals strength (RSSI) at all the frequencies available in frequency configuration. 
+Then displays the frequency with the highest RSSI value, with signal strength higher than than configured.
 
-- [x] Ansonic (12bit)
-- [x] CAME (12bit)
-- [x] Chamberlain (7bit)
-- [x] Chamberlain (8bit)
-- [x] Chamberlain (9bit)
-- [x] Holtek HT12X AM (12bit)
-- [x] Holtek HT12X FM (12bit)
-- [x] LinearDelta3 (8bit)
-- [x] Linear (10bit)
-- [x] Nice FLO (12bit)
-- [x] Princeton (24bit)
-- [x] SMC5326 (25bit)
-- [x] UNILARM (25bit)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner2.png">
+</p>
 
-<h2>SubGhz -> Tesla</h2>
+From there you can apply the found frequency for the general settings.
 
-- [x] Send EU Tesla Charge Door
-- [x] Send US Tesla Charge Door
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png" width="170" alt="Willy">
-</div>
+-----
 
-<h2>SubGhz -> DeBruijn</h2>
+- Jammer:<br>
+This function generates noise. Be careful when using this feature and ensure you follow the laws in your country. This may cause interference and potentially disrupt the proper operation of some devices.
 
-- [x] Send Linear Multicode
-- [x] Send Stanley Multicode
-- [x] Send Charmberlain
-- [x] Send Linear MooreMatic
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png" width="170" alt="Willy">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsPower.png">
+</p>
 
-<h2>SubGhz -> Jukebox</h2>
+-----
 
-- [x] Send Free Credit
-- [x] Send Pause Song
-- [x] Send Skip Song
-- [x] Send Volume UP
-- [x] Send Volume DOWN
-- [x] Send Power OFF
-- [x] Send Lock Queue
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png" width="170" alt="Willy">
-</div>
+- Bruteforce:<br>
+If you know the protocol used for example by the garage door it's possible to generate all the codes and send them with the Willy. 
 
-<h2>SubGhz -> Attack Switch Mode</h2>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bruteforce2.png">
+</p>
 
-- [x] Receiver/Jammer mode (Need two devices to perform the attacks properly)
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Attack.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JammerRolljam.png" width="170" alt="Willy">
-</div>
+<br>
 
-<h2>SubGhz -> Attack : Receiver : Rolljam</h2>
+```txt
+[Supported protocols]
 
-- [x] Set Jammer Power
-- [x] Set Send First Signal Auto.
-- [x] Start Rolljam Attack
-- [x] Send First Signal
-- [x] Send Second Signal
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRolljam.png" width="170" alt="Willy">
-</div>
+* CAME (12bit) - 303.00 mHz 
+* CAME (12bit) - 307.00 mHz 
+* CAME (12bit) - 315.00 mHz 
+* CAME (12bit) - 330.00 mHz 
+* CAME (12bit) - 433.92 mHz 
+* CAME (12bit) - 868.00 mHz
+* Nice FLO (12bit) - 433.92 mHz 
+* Nice FLO (12bit) - 868.00 mHz
+* Ansonic (12bit) - 433.07 mHz 
+* Ansonic (12bit) - 433.92 mHz 
+* Ansonic (12bit) - 434.07 mHz
+* Holtek_HT12X (12bit) FM - 433.92 mHz (TE: 204μs) 
+* Holtek_HT12X (12bit) AM - 433.92 mHz (TE: 433μs) 
+* Holtek_HT12X (12bit) AM - 315.00 mHz (TE: 433μs) 
+* Holtek_HT12X (12bit) AM - 868.00 mHz (TE: 433μs) 
+* Holtek_HT12X (12bit) AM - 915.00 mHz (TE: 433μs)
+* Chamberlain (9bit) - 300.00 mHz
+* Chamberlain (9bit) - 315.00 mHz
+* Chamberlain (9bit) - 390.00 mHz
+* Chamberlain (9bit) - 433.92 mHz
+* Chamberlain (8bit) - 300.00 mHz
+* Chamberlain (8bit) - 315.00 mHz
+* Chamberlain (8bit) - 390.00 mHz
+* Chamberlain (7bit) - 300.00 mHz
+* Chamberlain (7bit) - 315.00 mHz
+* Chamberlain (7bit) - 390.00 mHz
+* Linear (10bit) - 300.00 mHz
+* Linear (10bit) - 310.00 mHz
+* Linear Delta 3 (8bit) - 310.00 mHz
+* UNILARM (25bit) - 330.00 mHz (TE: 209μs) // Note: Only dip switch combinations, not full 25bit bruteforce
+* UNILARM (25bit) - 433.92 mHz (TE: 209μs) // Note: Only dip switch combinations, not full 25bit bruteforce
+* SMC5326 (25bit) - 330.00 mHz (TE: 320μs) // Note: Only dip switch combinations, not full 25bit bruteforce
+* SMC5326 (25bit) - 433.92 mHz (TE: 320μs) // Note: Only dip switch combinations, not full 25bit bruteforce
+* Princeton (24bit) - 315.00 mHz (TE: 286μs) // Note: Only for 8 dip switch remote, not full 24bit bruteforce
+* Princeton (24bit) - 330.00 mHz (TE: 286μs) // Note: Only for 8 dip switch remote, not full 24bit bruteforce
+* Princeton (24bit) - 390.00 mHz (TE: 286μs) // Note: Only for 8 dip switch remote, not full 24bit bruteforce
+* Princeton (24bit) - 433.92 mHz (TE: 286μs) // Note: Only for 8 dip switch remote, not full 24bit bruteforce
+```
 
-<h2>SubGhz -> Attack : Receiver : Rollback</h2>
+<br>
 
-- [x] Set Jammer Power
-- [x] Set Num. Signal Required
-- [x] Set Time Frame
-- [x] Start Rollback Attack
-- [x] Send Sequence
-- [x] Save Sequence
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/ConfigRollback.png" width="170" alt="Willy">
-</div>
+-----
 
-<h2>SubGhz -> Jammer</h2>
+- DeBruijn:<br>
+Generate and send DeBruijn sequence for predefined garage door models.
 
-- [x] Set Jammer Power
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jammer.png" width="170" alt="Willy">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DeBruijn.png">
+</p>
 
-<h2>SubGhz -> Scanner</h2>
+<br>
 
-- [x] Start Hoop Freq Scan
-- [x] Set Frequency Found
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Scanner.png" width="170" alt="Willy">
-</div>
+```txt
+[Supported sequence]
 
-<h2>SubGhz -> SD Card</h2>
+* Linear Multicode - 300.00 mHz
+* Stanley Multicode - 310.00 mHz
+* Charmberlain - 390.00 mHz
+* Linear MooreMatic - 310.00 mHz
+```
 
-- [x] Send .sub file***
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD.png" width="170" alt="Willy">
-</div>
+<br>
 
-<h2>***Protocol List</h2>
+From original Samy Kamkar Open Sesame
 
-- [x] RAW
-- [x] AlutechAT
-- [x] Ansonic
-- [x] BETT
-- [x] CAME 
-- [x] Clemsa
-- [x] Doitrand
-- [x] Dooya
-- [x] FAAC SLH
-- [x] GateTX
-- [x] Holtek HT12X
-- [x] Holtek
-- [x] Honeywell
-- [x] Hormann
-- [x] IntertechnoV3
-- [x] KeeLoq
-- [x] Kinggates
-- [x] LinearDelta3
-- [x] Linear
-- [x] Magellan
-- [x] Marantec
-- [x] Nero Radio
-- [x] Nero Sketch
-- [x] Nice FLO
-- [x] PhoenixV2
-- [x] Power Smart
-- [x] Princeton
-- [x] Security+ 1.0
-- [x] Security+ 2.0
-- [x] SMC5326
-- [x] Starline
-- [x] UNILARM
+-----
 
-<h2>SubGhz -> Settings</h2>
+- Tesla:<br>
+Generate and send open charge door signal for Tesla.
 
-- [x] Set Frequency
-- [x] Set Preset
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Settings.png" width="170" alt="Willy">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tesla.png">
+</p>
 
-<h2>Infrared -> Universal Remotes</h2><a id="infrared"></a>
+<br>
 
-- [x] TV
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/TV.png" width="170" alt="Willy">
-</div>
+```txt
+[Supported region]
 
-- [x] Digital Signs
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/DigitalsSigns.png" width="170" alt="Willy">
-</div>
+* EU - 433.92 mHz
+* US - 315.00 mHz
+```
 
-- [x] Projectors
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Projectors.png" width="170" alt="Willy">
-</div>
+<br>
 
-- [x] Audio
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Audio.png" width="170" alt="Willy">
-</div>
+-----
 
-- [x] LED
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/LED.png" width="170" alt="Willy">
-</div>
+- Jukebox:<br>
+Generate and send command for jukeboxes commonly found in bars.
 
-- [x] Fans
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Fans.png" width="170" alt="Willy">
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Jukebox.png">
+</p>
 
-<h2>Infrared -> Learn</h2>
+<br>
 
-- [x] Receive IR Signal*
-- [x] Save Last IR Signal
-- [x] Send Last IR Signal
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SignalIR.png" width="170" alt="Willy">
-</div>
+```txt
+[Supported command]
 
-<h2>*Protocol List</h2>
+* Free Credit - 433.92 mHz
+* Pause Song - 433.92 mHz
+* Skip Song - 433.92 mHz
+* Volume UP - 433.92 mHz
+* Volume DOWN - 433.92 mHz
+* Power OFF - 433.92 mHz
+* Lock Queue - 433.92 mHz
+```
 
-- [x] NEC / APPLE / ONKYO
-- [x] Kaseikyo
-- [x] Sony
-- [x] Samsung
-- [x] RC5
-- [x] RC6
+<br>
 
-<h2>Device</h2>
+-----
 
-- [x] Set Theme Color
-- [x] Device Information
-<br><br><div>
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Function.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Infrared.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Universal.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Main.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Misc.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Theme.png" width="170" alt="Willy">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device.png" width="170" alt="Willy">
-</div>
+- Rolljam:<br>
+This function is a proof of concept.<br>RollJam is a method of capturing a rolling code key transmission by simultaneously intercepting the transmission and jamming the receivers window with another device; giving the attacker a valid rolling code for re-transmission. 
 
-# Video<a id="preview"></a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam2.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rolljam3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsRSSI.png"> 
+</p>
 
-  Demo: https://www.youtube.com/watch?v=r5-hpoPlQkU
+<p align="center">
+  <code>You need two devices to perform this P.O.C successfully.</code>
+  <br><br>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JamMode.png">
+</p>
+
+-----
+
+- Rollback:<br>
+This function is a proof of concept.<br>Rollback is a vulnerability found mostly in Honda vehicles. By capturing X valid unlock key fob signals, it allows remote attackers to perform unlock operations and force a resynchronization; giving the attacker the ability to unlock indefinitely.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback2.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback3.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Rollback4.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SettingsRSSI.png"> 
+</p>
+
+<p align="center">
+  <code>You need two devices to perform this P.O.C successfully.</code>
+  <br><br>
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/JamMode.png">
+</p>
+
+-----
+
+- Saved File:<br>
+Let's you to view the contents of /SD Card/subghz/ (the default place to save your signal) and allows you to transmit it.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub2.png">
+</p>
+
+<br>
+
+```txt
+[Supported protocols]
+
+* RAW Data
+* Alutech AT-4N (72bit)
+* Ansonic (12bit)
+* BETT (18bit)
+* CAME Atomo (62bit)
+* CAME TWEE (54bit)
+* CAME (12bit)
+* CAME (18bit)
+* CAME (24bit)
+* CAME (25bit)
+* Chamberlain (7bit)
+* Chamberlain (8bit)
+* Chamberlain (9bit)
+* Clemsa (18bit)
+* Doitrand (37bit)
+* Dooya (40bit)
+* Faac SLH (64bit)
+* GateTX (24bit)
+* Genie (64bit)
+* Holtek_HT12X (12bit)
+* Holtek (40bit)
+* Honeywell (48bit)
+* Hormann HSM (44bit)
+* Intertechno_V3 (32bit)
+* KeeLoq (64bit)
+* KIA (61bit)
+* KingGates Stylo4k (89bit)
+* LinearDelta3 (8bit)
+* Linear (10bit)
+* Magellan (32bit)
+* Marantec (49bit)
+* Mastercode (36bit)
+* Megacode (24bit)
+* Nero Radio (56bit)
+* Nero Sketch (40bit)
+* Nice FLO (12bit)
+* Nice FLO (24bit)
+* Nice FloR-S (52bit)
+* Phoenix_V2 (52bit)
+* Power Smart (64bit)
+* Princeton (24bit)
+* Security+ 1.0 (21bit)
+* Security+ 2.0 (62bit)
+* SMC5326 (25bit)
+* Somfy Keytis (80bit)
+* Somfy Telis (56bit)
+* Starline (64bit)
+* UNILARM (25bit)
+```
+
+<br>
+
+-----
+
+### #Infrared
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Infrared.png">
+</p>
+
+-----
+
+- Learn:<br>
+Point the LED of the remote at the IR receiver and just press the button which you want to capture. (You can save 30 signals in the memory)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Learn4.png">
+</p>
+
+From there you can send it or save it on the sd card for use it later. 
+
+-----
+
+- Remote:<br>
+Just a universal remote control for TVs, AUdio, Projectors, Fans, etc.. Works with a database defined in a file, require an SD card.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Remote1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Remote2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Remote3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Remote_TV1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Remote_TV2.png"> 
+</p>
+
+-----
+
+- Tv-B-Gone:<br>
+Just a universal remote control for TVs, works with the public TV-B-Gone database, does not require an SD card.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Tv-B-Gone.png">
+</p>
+
+<br>
+
+```txt
+[Supported region]
+
+* EU - 139 signals
+* NA - 139 signals
+```
+
+<br>
+
+-----
+
+- Saved File:<br>
+Let's you to view the contents of /SD Card/infrared/ (the default place to save your remotes) and allows you to transmit it.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Infrared1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Infrared2.png">
+</p>
+
+<br>
+
+```txt
+[Supported protocols]
+* RAW
+* NEC
+* NECext
+* NEC42
+* NEC42ext
+* Kaseikyo
+* RCA
+* RC5X
+* RC5
+* RC6
+* Samsung32
+* SIRC
+* SIRC15
+* SIRC20
+```
+
+<br>
+
+Q: My universal remote doesn't work here or doesn't work there or I want to control this or that but it's not in the Universal remotes and I don't have a remote for it
+<blockquote>
+<p>A: Use the IRDB. It contains thousands of remotes sorted by type (AC, TV, Fan..) and then by name (Samsung, Logitech..). Here is a <a href="https://github.com/logickworkshop/Flipper-IRDB" title="link">link</a> just copy the contents to /SD Card/infrared (I recommend using a SD card reader for it.)</p>
+</blockquote>
+
+Q: I want to write my own .ir files, how do I do that?
+<blockquote>
+<p>A: This: IRDB Never used it myself but if you want to write your own .ir files, you can do your own research on the usage of the formats and idk what not. You should be good using irdb though, but it's always nice to have a few contributors :)</p>
+</blockquote>
+
+<br>
+
+-----
+
+### #BLE
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Bluetooth.png">
+</p>
+
+-----
+
+- BLE Spammer:<br>
+This function is designed to flood Bluetooth Low Energy (BLE) devices with connection requests or packets. It can be utilized for testing the resilience and security of BLE devices, including those running on Apple (iOS) and Android platforms.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/BLE_Spam.png">
+</p>
+
+
+<br>
+
+```txt
+[Supported payloads]
+
+* IOS 17 Lockup Crash
+* Apple Action Modal
+* Apple Device Popup
+* Android Device Connect
+* Samsung Buds Popup
+* Samsung Watch Pair
+* Windows Device Found
+* BT Settings Flood
+```
+
+-----
+
+- BLE Scanner:<br>
+This feature is used to discover and monitor nearby Bluetooth Low Energy devices. It works by searching for advertising packets that BLE devices periodically broadcast to announce their presence.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/BLE_Scan1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/BLE_Scan2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/BLE_Scan3.png"> 
+</p>
+
+
+For each Bluetooth device found, the following information is displayed:
+
+- Name
+- MAC
+- Potential Skimmer (https://learn.sparkfun.com/tutorials/gas-pump-skimmers/all)
+- RSSI
+
+<br>
+
+-----
+
+### #WiFi
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/WiFi.png">
+</p>
+
+-----
+
+- SSID Spammer:<br>
+This attack is a type of wireless network attack where an attacker floods a target area with fake SSID broadcast frames. The device sends out a large number of beacon frames, each containing a different fake SSID, with the intention of overwhelming nearby devices and networks.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SSID_Spam.png">
+</p>
+<br>
+
+```txt
+[Supported payloads]
+
+* Default
+* Rick Roll
+* Random
+```
+
+-----
+
+- Sniffer:<br>
+This feature is used to scan for WiFi networks and clients.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sniffer1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sniffer2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sniffer3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sniffer4.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sniffer5.png">
+</p>
+
+From here you have the possibility to start a deauth attack on a access point or particular station.
+
+-----
+
+- Deauth:<br>
+This feature is used to disconnect devices from their WiFi network by sending deauth packets (deauthentication attack).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Deauth1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Deauth2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Deauth3.png">
+</p>
+
+<br>
+
+```txt
+[Supported target]
+
+* Access Point
+* Station
+```
+
+-----
+
+- Evil Portal:<br>
+This function will turn your device into an open access point. When users try to connect to this access point they will be served a fake login screen. User data are sent to the Willy.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/EvilPortal1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/EvilPortal2.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/EvilPortal3.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/EvilPortal4.png">
+</p>
+
+<code>Note: Place your custom html files into /SD Card/evilportal/</code> <br><br> 
+
+<br>
+
+Q: ESP32 Limitations ?
+<blockquote>
+<p>A: The ESP32 access point will not have internet access while hosting the portal, as a result there cannot be any requests for stylesheets or javascript such as CDNs for bootstrap and JQuery.
+
+All HTML/CSS/JS must be in a single HTML file. This is due to the fact that the index.html kept in the memory of the esp32.
+
+There is a 20k character limit for each HTML file.
+
+The form data must be sent to the `/get` endpoint as a GET request with the params `email` & `password`. You can put any information you want in these two fields. For example the `email` param can contain a username instead, just keep the param name as `email`.
+
+Please check the examples to get an idea of what this has to look like.</p>
+</blockquote>
+
+-----
+
+### #Device
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device1.png"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Device2.png">
+</p>
+
+-----
+
+- About:<br>
+Show information about the device.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/About.png">
+</p>
+
+-----
+
+- Sleep Mode:<br>
+You can turn off the device with the physical button located under the screen at the bottom left.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Sleep.png">
+</p>
+
+-----
+
+- Color:<br>
+Recolor all firmware icons and save the choice in memory.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Color.png">
+</p>
+
+-----
+
+- Brightness:<br>
+Adjust the display brightness and save the choice in memory.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Brightness.png">
+</p>
+
+-----
+
+- PIN Code:<br>
+You can configure a 4-digit PIN code to secure the device boot.<br><br>Default PIN: <code>0000</code>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Edit_PIN.png">
+</p>
+
+-----
+
+- Reset Device:<br>
+You can reset the device if you want to return to the original icons.<br><br>Please note this also resets the PIN code to <code>0000</code> and disable the secure boot.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Reset.png">
+</p>
+
+<br>
+
+-----
+
+<br>
+
+<h1 align="center">Build:</h1><a id="build"></a>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230907_140559.jpg" width="500">
+</p>
+
+First, you need a board, select the cheapest link for you:
+
+<code>Lilygo (China warehouse)</code>
+- T-Display-S3 (Touch Soldered Version [H589]) - https://www.lilygo.cc/products/t-display-s3?variant=42589373268149
+
+<code>Lilygo (Germany warehouse)</code>
+- T-Display-S3 (Touch Soldered Version [SFNH589]) - https://www.lilygo.cc/products/t-display-s3-de?variant=42896523788469
+
+<code>Aliexpress</code>
+- T-Display-S3 (Touch Soldered Version) - https://www.aliexpress.us/item/3256804741686185.html
+
+<br>
+
+There are several methods to build Willy, you can build him in DIY ways, or buy a Willy shield.
+
+> <details><summary><code>CC1101 D.I.Y Shield</code></summary><ul>
+>   <br>
+>   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
+>   <br>
+>   <li>1x CC1101 V2.0 Module: <br> - Aliexpress : https://www.aliexpress.us/item/2251832873028557.html </li>
+>   <br>
+>   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
+>   <li>Contact me on discord for more information</li>
+> </ul></details>
+
+> <details><summary><code>Infrared D.I.Y Shield</code></summary><ul>
+>   <br>
+>   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
+>   <br>
+>   <li>1x Infrared Receiver TSOP4838 ( or any IR receiver model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/1005004481948853.html </li>
+>   <br>
+>   <li>1x Infrared LED TSAL6400 ( or any IR LED model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/32670031000.html </li>
+>   <br>
+>   <li>1x Transistor 2N4401 ( or any transistor model with same specs )(Optional): <br> - Aliexpress : https://www.aliexpress.us/item/1005005484591463.html </li>
+>   <br>
+>   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
+>   <li>Contact me on discord for more information</li>
+> </ul></details>
+
+> <details><summary><code>CC1101 + Infrared D.I.Y Shield</code></summary><ul>
+>   <br>
+>   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
+>   <br>
+>   <li>1x CC1101 V2.0 Module: <br> - Aliexpress : https://www.aliexpress.us/item/2251832873028557.html </li>
+>   <br>
+>   <li>1x Infrared Receiver TSOP4838 ( or any IR receiver model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/1005004481948853.html </li>
+>   <br>
+>   <li>1x Infrared LED TSAL6400 ( or any IR LED model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/32670031000.html </li>
+>   <br>
+>   <li>1x Transistor 2N4401 ( or any transistor model with same specs )(Optional): <br> - Aliexpress : https://www.aliexpress.us/item/1005005484591463.html </li>
+>   <br>
+>   <li>1x SS12D10 Switch ( or any switch model with same specs ) :  <br> - Aliexpress : https://www.aliexpress.us/item/2255800493933955.html </li>
+>   <br>
+>   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
+>   <li>Contact me on discord for more information</li>
+> </ul></details>
+
+> <details><summary><code>CC1101 + Infrared - Willy Shield</code></summary><ul>
+>   <br>
+>   <li>Custom PCB soldered at the factory</li>
+>   <li>Contact me on discord for more information</li>
+>   <br> <p align="center"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Shield.png" width="500" height="311"> </p>
+> </ul></details>
+
+<br>
+
+-----
+
+<br>
+
+<h1 align="center">Contact:</h1><a id="contact"></a>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Discord.png" width="100" height="100"> 
   <br>
-  Demo: https://www.youtube.com/shorts/5iebprjgEjE
-  
-# Build<a id="build"></a>
+  <code>h_rat</code>
+</p>
 
-<div align="flex">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/IMG_20230907_140559.jpg" width="500" alt="Willy">
-</div>
+<h4 align="center">Website: https://willy-firmware.com/</h4>
 
 <br>
 
-Board:
-- [x] 1x ESP32-S3 T-Display Touch Version - Soldered | https://www.aliexpress.us/item/3256804741686185.html
-
-CC1101 Shield:
-- [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
-- [x] 1x CC1101 V2.0 Module | https://www.aliexpress.us/item/2251832873028557.html
- 
-IR Shield:
-- [x] 1x S3 T-Display TF/SD Shield - Female | https://www.aliexpress.us/item/3256804956138540.html
-- [x] 1x Infrared Receiver TSOP4838 ( or any IR receiver model ) | https://www.aliexpress.us/item/1005004481948853.html
-- [x] 1x Infrared LED TSAL6400 ( or any IR LED model ) | https://www.aliexpress.us/item/32670031000.html
-- [x] 1x Transistor 2N4401 (Optional) | https://www.aliexpress.us/item/1005005484591463.html
+-----
 
 <br>
 
-Add me on discord for more information
+<h1 align="center">Disclaimer:</h1><a id="disclaimer"></a>
 
-# Contact<a id="contact"></a>
+This device designed specifically for educational purposes. this device have been carefully developed to offer a hands-on experience in the field of cybersecurity and penetration testing. As a responsible provider, I would like to emphasize that any illegal use of this device is strictly prohibited.
 
-- [x] Discord: h_rat
+It is crucial to acknowledge that using this device for any unauthorized activities, such as hacking or attempting to access sensitive information without proper authorization, is deemed illegal and unethical. I strongly discourage engaging in any activities that may cause harm, compromise security, or infringe upon others' privacy rights.
 
-# Disclaimer<a id="disclaimer"></a>
+By accessing and utilizing this device, users take complete responsibility for their actions and the consequences that may arise from them. I expect users to act responsibly, adhere to ethical guidelines, and ensure that their activities remain within the boundaries of the law and ethical norms.
 
-This device is a basic device for professionals and cybersecurity enthusiasts.
+Remember, this device are aimed at promoting knowledge, improving cybersecurity skills, and raising awareness about the potential vulnerabilities present in infrastructures. I encourage you to explore this device, learn from them, and embrace the opportunity to enhance your understanding in a controlled and legal environment.
 
-We are not responsible for the incorrect use of this device.
-
-Be careful with this device and the transmission of signals. Make sure to follow the laws that apply to your country.
+Thank you for your cooperation and commitment to responsible usage. Together, let us foster a secure and ethical cyberspace.

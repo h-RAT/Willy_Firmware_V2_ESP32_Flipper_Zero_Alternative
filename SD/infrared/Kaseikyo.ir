@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Kaseikyo
+type: parsed
+protocol: Kaseikyo
+address: AC 02 20 00
+command: 61 00 00 00

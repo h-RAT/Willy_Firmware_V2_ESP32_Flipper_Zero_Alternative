@@ -1,0 +1,8 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: NEC_02C
+type: parsed
+protocol: NEC
+address: 19 00 00 00
+command: 0F 00 00 00
