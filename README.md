@@ -9,6 +9,11 @@
 </h2>
 
 This firmware is an alternative to Flipper Zero for ESP-32, and is always updated from the original Flipper ideas, making it the most stable alternative.
+
+<p align="center">
+  <a href="https://discord.gg/VqsUsPQSmP"><img src="https://discordapp.com/api/guilds/1169681522715000873/widget.png?style=banner2" alt="Discord Banner 3"/></a>
+</p>
+
 <h4 align="center">Website: https://willy-firmware.com/</h4>
 
 -----
