@@ -717,31 +717,7 @@ First, you need a board, select the cheapest link for you:
 
 There are several methods to build Willy, you can build him in DIY ways, or buy a Willy shield.
 
-> <details><summary><code>CC1101 D.I.Y Shield</code></summary><ul>
->   <br>
->   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
->   <br>
->   <li>1x CC1101 V2.0 Module: <br> - Aliexpress : https://www.aliexpress.us/item/2251832873028557.html </li>
->   <br>
->   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
->   <li>Contact me on discord for more information</li>
-> </ul></details>
-
-> <details><summary><code>Infrared D.I.Y Shield</code></summary><ul>
->   <br>
->   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
->   <br>
->   <li>1x Infrared Receiver TSOP4838 ( or any IR receiver model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/1005004481948853.html </li>
->   <br>
->   <li>1x Infrared LED TSAL6400 ( or any IR LED model with same specs ): <br> - Aliexpress : https://www.aliexpress.us/item/32670031000.html </li>
->   <br>
->   <li>1x Transistor 2N4401 ( or any transistor model with same specs )(Optional): <br> - Aliexpress : https://www.aliexpress.us/item/1005005484591463.html </li>
->   <br>
->   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
->   <li>Contact me on discord for more information</li>
-> </ul></details>
-
-> <details><summary><code>CC1101 + Infrared D.I.Y Shield</code></summary><ul>
+> <details><summary><code>D.I.Y Shield</code></summary><ul>
 >   <br>
 >   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
 >   <br>
@@ -753,13 +729,11 @@ There are several methods to build Willy, you can build him in DIY ways, or buy 
 >   <br>
 >   <li>1x Transistor 2N4401 ( or any transistor model with same specs )(Optional): <br> - Aliexpress : https://www.aliexpress.us/item/1005005484591463.html </li>
 >   <br>
->   <li>1x SS12D10 Switch ( or any switch model with same specs ) :  <br> - Aliexpress : https://www.aliexpress.us/item/2255800493933955.html </li>
->   <br>
->   <li>Diagram, Photos, Instructions are given when you buy the firmware.</li>
+>   <br> <p align="center"> <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Diagram.png"> </p>
 >   <li>Contact me on discord for more information</li>
 > </ul></details>
 
-> <details><summary><code>CC1101 + Infrared - Willy Shield</code></summary><ul>
+> <details><summary><code>Willy Shield</code></summary><ul>
 >   <br>
 >   <li>Custom PCB soldered at the factory</li>
 >   <li>Contact me on discord for more information</li>
