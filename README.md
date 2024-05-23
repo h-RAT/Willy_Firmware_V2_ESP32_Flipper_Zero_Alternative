@@ -83,6 +83,8 @@ From there you can send it or save it on the sd card for use it later.
 ```txt
 [Supported decoders]
 
+* Ansonic (12bit)
+* BETT (18bit)
 * CAME (12bit)
 * CAME (18bit)
 * CAME (24bit)
@@ -90,9 +92,16 @@ From there you can send it or save it on the sd card for use it later.
 * Chamberlain (7bit)
 * Chamberlain (8bit)
 * Chamberlain (9bit)
+* Clemsa (18bit)
+* Doitrand (37bit)
+* Dooya (50bit)
+* FAAC SLH (64bit)
 * GateTX (24bit)
+* Hormann HSM (44bit)
 * KeeLoq (64bit)
 * Linear (10bit)
+* Magellan (32bit)
+* Marantec (49bit)
 * Nice FLO (12bit)
 * Nice FLO (24bit)
 * Princeton (24bit)
@@ -139,6 +148,7 @@ From there you can send it or save it on the sd card for use it later.
 * Holtek (40bit)
 * Honeywell (48bit)
 * Hormann HSM (44bit)
+* Hormann BiSecur (176bit)
 * Intertechno_V3 (32bit)
 * KeeLoq (64bit)
 * KIA (61bit)
