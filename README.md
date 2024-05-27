@@ -720,13 +720,16 @@ You can reset the device if you want to return to the original icons.<br><br>Ple
 First, you need a board, select the cheapest link for you:
 
 <code>Lilygo (China warehouse)</code>
-- T-Display-S3 (Touch Soldered Version [H589]) - https://www.lilygo.cc/products/t-display-s3?variant=42589373268149
+- <a href="https://www.lilygo.cc/products/t-display-s3?variant=42589373268149?bg_ref=fq0SZYWvzA">T-Display-S3 (Touch Soldered Version [H589])</a>
 
 <code>Lilygo (Germany warehouse)</code>
-- T-Display-S3 (Touch Soldered Version [SFNH589]) - https://www.lilygo.cc/products/t-display-s3-de?variant=42896523788469
+- <a href="https://www.lilygo.cc/products/t-display-s3-de?variant=42896523788469?bg_ref=fq0SZYWvzA">T-Display-S3 (Touch Soldered Version [SFNH589])</a>
+
+<code>Lilygo (US warehouse)</code>
+- <a href="https://www.lilygo.cc/products/t-display-s3-us?variant=44029410345141?bg_ref=fq0SZYWvzA">T-Display-S3 (Touch Soldered Version [H589US])</a>
 
 <code>Aliexpress</code>
-- T-Display-S3 (Touch Soldered Version) - https://www.aliexpress.us/item/3256804741686185.html
+- <a href="https://www.aliexpress.us/item/3256804741686185.html">T-Display-S3 (Touch Soldered Version)</a>
 
 <br>
 
@@ -734,7 +737,7 @@ There are several methods to build Willy, you can build him in DIY ways, or buy 
 
 > <details><summary><code>D.I.Y Shield</code></summary><ul>
 >   <br>
->   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973 <br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
+>   <li>1x TF Shield: <br> - Lilygo : T-Display TF Shied (Female PIN Version [H610]) - https://www.lilygo.cc/products/t-display-tf-shied?variant=42729797025973<br>or<br> - Aliexpress : T-Display TF Shied (Female PIN Version) - https://www.aliexpress.us/item/3256804956138540.html </li>
 >   <br>
 >   <li>1x CC1101 V2.0 Module: <br> - Aliexpress : https://www.aliexpress.us/item/2251832873028557.html </li>
 >   <br>
