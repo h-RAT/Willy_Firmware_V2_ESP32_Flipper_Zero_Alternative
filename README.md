@@ -213,21 +213,21 @@ If you know the protocol used for example by the garage door it's possible to ge
 ```txt
 [Supported protocols]
 
-* CAME (12bit) - 303.00 mHz 
-* CAME (12bit) - 307.00 mHz 
+* CAME (12bit) - 303.87 mHz 
+* CAME (12bit) - 307.80 mHz 
 * CAME (12bit) - 315.00 mHz 
 * CAME (12bit) - 330.00 mHz 
 * CAME (12bit) - 433.92 mHz 
-* CAME (12bit) - 868.00 mHz
+* CAME (12bit) - 868.35 mHz
 * Nice FLO (12bit) - 433.92 mHz 
-* Nice FLO (12bit) - 868.00 mHz
+* Nice FLO (12bit) - 868.35 mHz
 * Ansonic (12bit) - 433.07 mHz 
 * Ansonic (12bit) - 433.92 mHz 
 * Ansonic (12bit) - 434.07 mHz
 * Holtek_HT12X (12bit) FM - 433.92 mHz (TE: 204μs) 
 * Holtek_HT12X (12bit) AM - 433.92 mHz (TE: 433μs) 
 * Holtek_HT12X (12bit) AM - 315.00 mHz (TE: 433μs) 
-* Holtek_HT12X (12bit) AM - 868.00 mHz (TE: 433μs) 
+* Holtek_HT12X (12bit) AM - 868.35 mHz (TE: 433μs) 
 * Holtek_HT12X (12bit) AM - 915.00 mHz (TE: 433μs)
 * Chamberlain (9bit) - 300.00 mHz
 * Chamberlain (9bit) - 315.00 mHz
@@ -269,9 +269,21 @@ Generate and send DeBruijn sequence for predefined garage door models.
 [Supported sequence]
 
 * Linear Multicode - 300.00 mHz
+* Linear Multicode - 310.00 mHz
+* Linear Multicode - 390.00 mHz
+* Linear Multicode - 433.92 mHz
+* Stanley Multicode - 300.00 mHz
 * Stanley Multicode - 310.00 mHz
+* Stanley Multicode - 390.00 mHz
+* Stanley Multicode - 433.92 mHz
+* Charmberlain - 300.00 mHz
+* Charmberlain - 310.00 mHz
 * Charmberlain - 390.00 mHz
+* Charmberlain - 433.92 mHz
+* Linear MooreMatic - 300.00 mHz
 * Linear MooreMatic - 310.00 mHz
+* Linear MooreMatic - 390.00 mHz
+* Linear MooreMatic - 433.92 mHz
 ```
 
 <br>
@@ -356,10 +368,10 @@ This function is a proof of concept.<br>Rollback is a vulnerability found mostly
 -----
 
 - Saved File:<br>
-Let's you to view the contents of /SD Card/subghz/ (the default place to save your signal) and allows you to transmit it.
+Let's you to view the contents of your SD card and allows you to view and transmit your files.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub2.png">
+  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub1.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub3.png">  <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/SD_Card_Sub2.png">
 </p>
 
 <br>
