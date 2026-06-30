@@ -803,3 +803,4 @@ By accessing and utilizing this device, users take complete responsibility for t
 Remember, this device are aimed at promoting knowledge, improving cybersecurity skills, and raising awareness about the potential vulnerabilities present in infrastructures. I encourage you to explore this device, learn from them, and embrace the opportunity to enhance your understanding in a controlled and legal environment.
 
 Thank you for your cooperation and commitment to responsible usage. Together, let us foster a secure and ethical cyberspace.
+
