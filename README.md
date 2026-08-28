@@ -1,8 +1,10 @@
+
 <h1 align="center"> <code>Willy Firmware V2</code> - Flipper Zero alternative with ESP32</h1><a id="introduction"></a>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/h-RAT/Willy_Firmware_CC1101/main/Image/Logo.png">
 </p>
+<h1 align="center">🆕V3: https://github.com/h-RAT/Willy_Firmware_V3_T-Embed_CC1101</h1>
 
 <h2 align="center">
   <a href="#introduction">Introduction</a> | <a href="#features">Features</a> | <a href="#build">Build</a> | <a href="#contact">Contact</a> | <a href="#disclaimer">Disclaimer</a>
